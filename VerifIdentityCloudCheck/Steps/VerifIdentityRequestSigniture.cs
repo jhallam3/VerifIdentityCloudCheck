@@ -16,7 +16,7 @@ namespace VerifIdentityCloudCheck.Steps
 	[AutoRegisterMethodsOnClass(true, "Integration/VerifIdentity")]
 	public class VerifIdentityRequestSigniture
 	{
-        public string RequestSigniture (string key,	string secret, string nonce, string timestamp, string data, string path)
+        public string RequestSigniture (string key, string secret, string nonce, string timestamp, string data, string path)
 			{
 			
 			// Set up some dummy parameters. Use a SortedDictionary to sort alphabetically.
@@ -48,7 +48,7 @@ namespace VerifIdentityCloudCheck.Steps
 					signatureHex += hashedMessage[i].ToString("X2"); // hex format
 				}
 				// Outputs: 53ccc8563d21393bbac5a5a693e0ba7cc408f83dfb04008122510eee9e80aa86
-				Console.WriteLine("Signature: " +signatureHex.ToLower());
+				
 				return signatureHex.ToLower();
 			};
         }
