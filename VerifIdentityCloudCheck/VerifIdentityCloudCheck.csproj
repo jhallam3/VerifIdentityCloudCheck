@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DecisionsFramework">
-      <HintPath>C:\Program Files\Decisions\Decisions Services Manager\bin\DecisionsFramework.dll</HintPath>
+    <Reference Include="DecisionsFramework, Version=6.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DecisionsSDK.6.12.0\lib\DecisionsFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,7 +51,7 @@
     <Compile Include="Steps\VerifIdentityRequestSigniture.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Readme.txt" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
